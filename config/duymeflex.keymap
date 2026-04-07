@@ -12,17 +12,17 @@
 // |   ESC   |   1   |   2   |   3   |   4   |   5   |     |   6   |   7    |   8   |   9   |    0    |    0    |
 // |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U    |   I   |   O   |    P    |    -    |
 // |   CTRL  |   A   |   S   |   D   |   F   |   G   |     |   H   |   J    |   K   |   L   |    ;    |    '    |
-// |   SHIFT |   Z   |   X   |   C   |   V   |   B   |     |   N   |   M    |   ,   |   .   |    /    |  SHIFT  |
+// |   SHIFT |   Z   |   X   |   C   |   V   |                     |   B    |   N   |   M   |    ,    |    .    |
 // |         |       |       |  ALT  |   4   |   5   |     |  DEL  |   7    |   8   |       |         |         |
 // |         |       |       |  ALT  | ENTER | SPACE |     | HOME  |  END   |  BSPC |       |         |         |
 
 
             bindings = <
   &kp ESC    &kp 1   &kp 2   &kp 3    &kp 4   &kp 5        &kp 6    &kp 7   &kp 8     &kp 9    &kp 0    &kp 0
-  &kp ESC    &kp Q   &kp W   &kp E    &kp R   &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P    &kp MINUS
+  &kp TAB    &kp Q   &kp W   &kp E    &kp R   &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P    &kp MINUS
   &kp LCTRL  &kp A   &kp S   &kp D    &kp F   &kp G        &kp H    &kp J   &kp K     &kp L    &kp SEMI &kp SQT
-  &kp LSHIFT &kp Z   &kp X   &kp C    &kp V   &kp B        &kp N    &kp M   &kp COMMA &kp DOT  &kp FSLH &kp RSHIFT
-                             &kp C    &kp V   &kp B        &kp DEL  &kp 7   &kp 8
+  &kp LSHIFT &kp Z   &kp X   &kp C    &kp V                         &kp B   &kp N     &kp M    &kp COMMA &kp DOT
+                             &kp LGUI &kp V   &kp B        &kp DEL  &kp 7   &kp 8
                              &kp LALT &kp RET &kp SPACE    &kp HOME &kp END &kp BSPC                             
             >;
         };

@@ -6,7 +6,51 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Base";
+            display-name = "Default Layer";
+
+// ---------------------------------------------------------------------------------------------------------
+// |   ESC   |   1   |   2   |   3   |   4   |   5   |     |   6   |   7    |   8   |   9   |    0    |    \    |
+// |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U    |   I   |   O   |    P    |    -    |
+// |   SHIFT |   A   |   S   |   D   |   F   |   G   |     |   H   |   J    |   K   |   L   |    ;    |    '    |
+// |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B    |   N   |   M   |    ,    |    .    |
+// |         |       |       |  ALT  |   4   |   5   |     |  DEL  |   7    |   8   |       |         |         |
+// |         |       |       |  ALT  |Layer1 | SPACE |     | HOME  | Layer2 |  BSPC |       |         |         |
+
+
+            bindings = <
+  &kp ESC    &kp N1  &kp N2  &kp N3   &kp N4  &kp N5       &kp N6   &kp N7  &kp N8    &kp N9   &kp N0   &kp N0
+  &kp TAB    &kp Q   &kp W   &kp E    &kp R   &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P    &kp MINUS
+  &kp LSHIFT &kp A   &kp S   &kp D    &kp F   &kp G        &kp H    &kp J   &kp K     &kp L    &kp SEMI &kp SQT
+  &kp LCTRL  &kp Z   &kp X   &kp C    &kp V                         &kp B   &kp N     &kp M    &kp COMMA &kp DOT
+                             &kp LGUI &kp V   &bootloader  &kp DEL  &kp N7  &bootloader
+                             &kp LALT &mo 1   &kp SPACE    &kp HOME &mo 2   &kp BSPC
+            >;
+        };
+
+        lower_layer {
+            display-name = "Lower Layer";
+
+// ---------------------------------------------------------------------------------------------------------
+// |   F1    |   F2  |   F3  |   F4  |   F5  |   F6  |     |   F7  |   F8   |   F9  |   F10 |    F11  |  F12    |
+// |   TAB   |   0   |   1   |   2   |   3   |   [   |     |   \   |   /    |   ?   |   "   |    #    |    :    |
+// |   SHIFT |   -   |   4   |   5   |   6   |   ]   |     |   &   |   *    |   !   |   @   |    ;    |    '    |
+// |   CTRL  |   +   |   7   |   8   |   9   |                     |   $    |   %   |   ^   |    ,    |    .    |
+// |         |       |       |  trans|  `    |   ~   |     |PAge up|   (    |   )   |       |         |         |
+// |         |       |       |  trans| trans | trans |     |PageDown|   <   |   >   |       |         |         |
+
+
+            bindings = <
+  &kp ESC    &kp N1  &kp N2  &kp N3   &kp N4  &kp N5       &kp N6   &kp N7  &kp N8    &kp N9   &kp N0   &kp N0
+  &kp TAB    &kp Q   &kp W   &kp E    &kp R   &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P    &kp MINUS
+  &kp LSHIFT &kp A   &kp S   &kp D    &kp F   &kp G        &kp H    &kp J   &kp K     &kp L    &kp SEMI &kp SQT
+  &kp LCTRL  &kp Z   &kp X   &kp C    &kp V                         &kp B   &kp N     &kp M    &kp COMMA &kp DOT
+                             &kp LGUI &kp V   &bootloader  &kp DEL  &kp N7  &bootloader
+                             &kp LALT &kp RET &kp SPACE    &kp HOME &kp END &kp BSPC
+            >;
+        };        
+
+        raise__layer {
+            display-name = "Raise Layer";
 
 // ---------------------------------------------------------------------------------------------------------
 // |   ESC   |   1   |   2   |   3   |   4   |   5   |     |   6   |   7    |   8   |   9   |    0    |    0    |
@@ -18,12 +62,12 @@
 
 
             bindings = <
-  &kp ESC    &kp N1  &kp N2  &kp N3   &kp N4  &kp N5       &kp N6   &kp N7  &kp N8    &kp N9   &kp N0   &kp N0
-  &kp TAB    &kp Q   &kp W   &kp E    &kp R   &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P    &kp MINUS
-  &kp LCTRL  &kp A   &kp S   &kp D    &kp F   &kp G        &kp H    &kp J   &kp K     &kp L    &kp SEMI &kp SQT
-  &kp LSHIFT &kp Z   &kp X   &kp C    &kp V                         &kp B   &kp N     &kp M    &kp COMMA &kp DOT
-                             &kp LGUI &kp V   &bootloader  &kp DEL  &kp N7  &bootloader
-                             &kp LALT &kp RET &kp SPACE    &kp HOME &kp END &kp BSPC
+  &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR     &kp N7  &kp N8    &kp N9   &kp N0   &kp N0
+  &studio_unlock &kp Q        &kp W        &kp E        &kp R         &kp T          &studio_unlock &kp U   &kp I     &kp O    &kp P    &kp MINUS
+  &bootloader    &kp A        &kp S        &kp D        &kp F         &kp G          &bootloader    &kp J   &kp K     &kp L    &kp SEMI &kp SQT
+  &soft_off      &kp Z        &kp X        &kp C        &kp V                        &soft_off      &kp N   &kp M   &kp COMMA &kp DOT
+                                           &kp LGUI     &kp V         &kp A          &kp DEL        &kp N7  &kp N7
+                                           &kp LALT     &kp RET       &kp SPACE      &kp HOME       &kp END &kp BSPC
             >;
         };
     };

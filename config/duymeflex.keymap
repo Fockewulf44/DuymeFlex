@@ -23,7 +23,7 @@
   &kp LCTRL  &kp A   &kp S   &kp D    &kp F   &bootloader  &kp H    &kp J   &kp K     &kp L    &kp SEMI &kp SQT
   &kp LSHIFT &kp Z   &kp X   &kp C    &kp V                         &kp B   &kp N     &kp M    &kp COMMA &kp DOT
                              &kp LGUI &kp V   &kp B        &kp DEL  &kp N7  &kp N8
-                             &kp LALT &kp RET &kp SPACE    &kp HOME &kp END &kp BSPC                             
+                             &kp LALT &kp RET &kp SPACE    &kp HOME &kp END &kp BSPC
             >;
         };
     };

@@ -10,43 +10,45 @@
             display-name = "Default Layer";
 
 // ---------------------------------------------------------------------------------------------------------
-// |   ESC   |   1   |   2   |   3   |   4   |   5   |     |   6   |   7    |   8   |   9   |    0    |    \    |
-// |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U    |   I   |   O   |    P    |    -    |
-// |   SHIFT |   A   |   S   |   D   |   F   |   G   |     |   H   |   J    |   K   |   L   |    ;    |    '    |
-// |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B    |   N   |   M   |    ,    |    .    |
+// |   ESC   |   1   |   2   |   3   |   4   |   5   |     |   6   |   7    |   8   |   9   |    0    | PageUp  |
+// |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U    |   I   |   O   |    P    | PageDown|
+// |   SHIFT |   A   |   S   |   D   |   F   |   G   |     |   H   |   J    |   K   |   L   |    ;    | PrintS  |
+// |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B    |   N   |   M   |    ,    | CapsLock|
 // |         |       |       |  ALT  |   4   |   5   |     |  DEL  |   7    |   8   |       |         |         |
 // |         |       |       |  ALT  |Layer1 | SPACE |     | HOME  | Layer2 |  BSPC |       |         |         |
 
 
             bindings = <
-  &kp ESC    &kp N1  &kp N2  &kp N3   &kp N4  &kp N5       &kp N6   &kp N7  &kp N8    &kp N9   &kp N0   &kp N0
-  &kp TAB    &kp Q   &kp W   &kp E    &kp R   &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P    &kp MINUS
-  &kp LSHIFT &kp A   &kp S   &kp D    &kp F   &kp G        &kp H    &kp J   &kp K     &kp L    &kp SEMI &kp SQT
-  &kp LCTRL  &kp Z   &kp X   &kp C    &kp V                         &kp B   &kp N     &kp M    &kp COMMA &kp DOT
-                             &kp LGUI &kp V   &kp SPACE    &kp DEL  &kp N7  &kp RCTRL
-                             &kp RET  &mo 1   &kp BSPC     &kp HOME &mo 2   &kp END
+  &kp ESC    &kp N1  &kp N2  &kp N3   &kp N4   &kp N5       &kp N6   &kp N7  &kp N8    &kp N9   &kp N0    &kp PG_UP
+  &kp TAB    &kp Q   &kp W   &kp E    &kp R    &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P     &kp PG_DN
+  &kp LSHIFT &kp A   &kp S   &kp D    &kp F    &kp G        &kp H    &kp J   &kp K     &kp L    &kp SEMI  &kp PSCRN
+  &kp LCTRL  &kp Z   &kp X   &kp C    &kp V                          &kp B   &kp N     &kp M    &kp COMMA &kp LCAPS
+                             &kp LGUI &kp LALT &kp SPACE    &kp RGUI &mo 2   &kp RCTRL
+                             &kp RET  &mo 1    &kp BSPC     &kp HOME &kp END &kp DEL
             >;
         };
 
         lower_layer {
             display-name = "Lower Layer";
 
+
+
 // ---------------------------------------------------------------------------------------------------------
-// |   F1    |   F2  |   F3  |   F4  |   F5  |   F6  |     |   F7  |   F8   |   F9  |   F10 |    F11  |  F12    |
-// |   TAB   |   `   |   !   |   @   |   #   |   $   |     |   %   |   ^    |   &   |   *   |    -    |    +    |
-// |   SHIFT |   [   |   ]   |   (   |   )   |   ]   |     |   '   |   "    |   :   |   @   |    ;    |    <    |
-// |   CTRL  |   =   |   7   |   {   |   }   |                     |   _    |   ?   |   |   |    ,    |    .    |
-// |         |       |       |  trans|  "    |   ~   |     |PAge up|   (    |   )   |       |         |         |
-// |         |       |       |  trans| trans | trans |     |PageDown|   <   |   >   |       |         |         |
+// |   F1    |   F2  |    F3  |   F4    |   F5    |   F6  |      |  F7    |   F8     |   F9    |   F10 |    F11  |  F12    |
+// |   TAB   |   !   |    @   |   #     |   $     |   %   |      |  ^     |   &      |   *     |   \   |    /    |    ~    |
+// |   SHIFT |   -   |    +   |   (     |   )     |   '   |      |  "     |   [      |   ]     |   :   |    ;    |    ?    |
+// |   CTRL  |   _   |    =   |   ,     |   .     |                       |   {      |   }     |   <   |    >    |    |    |
+// |         |       |        |  trans  | trans   | trans |      |trans   |   UP     | trans   |       |         |         |
+// |         |       |        |  trans  | trans   | trans |      |LEFT    |  DOWN    | RIGHT   |       |         |         |
 
 
             bindings = <
-  &kp F1     &kp F2  &kp F3   &kp F4   &kp F5   &kp F6       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-  &kp TAB    &kp Q   &kp EXCL &kp AT   &kp HASH &kp DLLR     &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp PLUS
-  &kp LSHIFT &kp A   &kp S    &kp D    &kp F    &kp G        &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
-  &kp LCTRL  &kp Z   &kp X    &kp C    &kp V                           &kp B     &kp N     &kp M     &kp COMMA &kp DOT
-                              &kp LGUI &kp V    &trans       &kp DEL   &kp N7    &trans
-                              &kp LALT &trans   &kp SPACE    &kp HOME  &trans    &kp BSPC
+  &kp F1     &kp F2    &kp F3    &kp F4    &kp F5   &kp F6       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+  &kp TAB    &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp BSLH  &kp FSLH  &kp TILDE
+  &kp LSHIFT &kp MINUS &kp PLUS  &kp LPAR  &kp RPAR &kp SQT      &kp DQT   &kp LBKT  &kp RBKT  &kp COLON &kp SEMI  &kp SQT
+  &kp LCTRL  &kp UNDER &kp EQUAL &kp COMMA &kp DOT                         &kp LBRC  &kp RBRC  &kp LT    &kp GT    &kp PIPE
+                                 &trans    &trans   &trans       &trans    &kp UP    &trans
+                                 &trans    &trans   &trans       &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };        
 
@@ -54,21 +56,21 @@
             display-name = "Raise Layer";
 
 // ---------------------------------------------------------------------------------------------------------
-// |   ESC   |   1   |   2   |   3   |   4   |   5   |     |   6   |   7    |   8   |   9   |    0    |    0    |
-// |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U    |   I   |   O   |    P    |    -    |
-// |   CTRL  |   A   |   S   |   D   |   F   |   G   |     |   H   |   J    |   K   |   L   |    ;    |    '    |
-// |   SHIFT |   Z   |   X   |   C   |   V   |                     |   B    |   N   |   M   |    ,    |    .    |
-// |         |       |       |  ALT  |   4   |   5   |     |  DEL  |   7    |   8   |       |         |         |
-// |         |       |       |  ALT  | ENTER | SPACE |     | HOME  |  END   |  BSPC |       |         |         |
+// |   ESC   |       |       |       |       |       |     |       |        |       |       |         |         |
+// |   TAB   |       |       |       |       |       |     |       |        |       |       |         |         |
+// |   CTRL  |       |       |       |       |       |     |       |        |       |       |         |         |
+// |   SHIFT |       |       |       |       |                     |        |       |       |         |         |
+// |         |       |       |       |       |       |     |       |        |       |       |         |         |
+// |         |       |       |       |       |       |     |       |        |       |       |         |         |
 
-
+ 
             bindings = <
-  &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR     &kp N7  &kp N8    &kp N9   &kp N0   &kp N0
-  &studio_unlock &bt BT_CLR   &kp W         &kp E        &kp R         &kp T            &studio_unlock &kp U   &kp I     &kp O    &kp P    &kp MINUS
-  &bootloader    &kp A        &kp S         &kp D        &kp F         &kp G            &bootloader    &kp J   &kp K     &kp L    &kp SEMI &kp SQT
-  &soft_off      &kp Z        &kp X         &kp C        &kp V                          &soft_off      &kp N   &kp M     &kp COMMA &kp DOT
-                                            &kp LGUI     &kp V         &kp A            &kp DEL        &kp N7  &kp N7
-                                            &kp LALT     &kp RET       &kp SPACE        &kp HOME       &kp END &kp BSPC
+  &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR     &kp C_BRI_DN  &kp C_BRI_UP &trans       &kp N0   &kp N0
+  &studio_unlock &bt BT_CLR   &kp W         &kp E        &kp R         &kp T            &studio_unlock &kp C_MUTE    &kp C_VOL_DN &kp C_VOL_UP &kp P    &kp MINUS
+  &bootloader    &kp A        &kp S         &kp D        &kp F         &kp G            &bootloader    &kp J         &kp K        &kp L        &kp SEMI &kp SQT
+  &soft_off      &kp Z        &kp X         &kp C        &kp V                          &soft_off      &kp N         &kp M        &kp COMMA    &kp DOT
+                                            &trans       &trans        &trans           &trans         &trans        &trans
+                                            &trans       &trans        &trans           &trans         &trans        &trans
             >;
         };
     };

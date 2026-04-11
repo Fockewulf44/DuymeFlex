@@ -14,17 +14,17 @@
 // |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U    |   I   |   O   |    P    | PageDown|
 // |   SHIFT |   A   |   S   |   D   |   F   |   G   |     |   H   |   J    |   K   |   L   |    ;    | PrintS  |
 // |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B    |   N   |   M   |    ,    | CapsLock|
-// |         |       |       |  ALT  |   4   |   5   |     |  DEL  |   7    |   8   |       |         |         |
-// |         |       |       |  ALT  |Layer1 | SPACE |     | HOME  | Layer2 |  BSPC |       |         |         |
+// |         |       |       | SPACE | LALT  | LGUI  |     | RGUI  | &mo 2  | RCTRL |       |         |         |
+// |         |       |       |  RET  |Layer1 | BSPC  |     | HOME  |  END   |  BSPC |       |         |         |
 
 
             bindings = <
-  &kp ESC    &kp N1  &kp N2  &kp N3   &kp N4   &kp N5       &kp N6   &kp N7  &kp N8    &kp N9   &kp N0    &kp PG_UP
-  &kp TAB    &kp Q   &kp W   &kp E    &kp R    &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P     &kp PG_DN
-  &kp LSHIFT &kp A   &kp S   &kp D    &kp F    &kp G        &kp H    &kp J   &kp K     &kp L    &kp SEMI  &kp PSCRN
-  &kp LCTRL  &kp Z   &kp X   &kp C    &kp V                          &kp B   &kp N     &kp M    &kp COMMA &kp LCAPS
-                             &kp LGUI &kp LALT &kp SPACE    &kp RGUI &mo 2   &kp RCTRL
-                             &kp RET  &mo 1    &kp BSPC     &kp HOME &kp END &kp DEL
+  &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4   &kp N5       &kp N6   &kp N7  &kp N8    &kp N9   &kp N0    &kp PG_UP
+  &kp TAB    &kp Q   &kp W   &kp E     &kp R    &kp T        &kp Y    &kp U   &kp I     &kp O    &kp P     &kp PG_DN
+  &kp LSHIFT &kp A   &kp S   &kp D     &kp F    &kp G        &kp H    &kp J   &kp K     &kp L    &kp SEMI  &kp PSCRN
+  &kp LCTRL  &kp Z   &kp X   &kp C     &kp V                          &kp B   &kp N     &kp M    &kp COMMA &kp CLCK
+                             &kp SPACE &kp LALT &kp LGUI     &kp RGUI &mo 2   &kp RCTRL
+                             &kp RET   &mo 1    &kp BSPC     &kp HOME &kp END &kp DEL
             >;
         };
 
@@ -67,7 +67,7 @@
             bindings = <
   &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR     &kp C_BRI_DN  &kp C_BRI_UP &trans       &kp N0   &kp N0
   &studio_unlock &bt BT_CLR   &kp W         &kp E        &kp R         &kp T            &studio_unlock &kp C_MUTE    &kp C_VOL_DN &kp C_VOL_UP &kp P    &kp MINUS
-  &bootloader    &kp A        &kp S         &kp D        &kp F         &kp G            &bootloader    &kp J         &kp K        &kp L        &kp SEMI &kp SQT
+  &bootloader    &kp A        &kp S         &kp D        &kp F         &kp G            &bootloader    &kp C_PREV    &kp C_PP     &kp C_NEXT   &kp SEMI &kp SQT
   &soft_off      &kp Z        &kp X         &kp C        &kp V                          &soft_off      &kp N         &kp M        &kp COMMA    &kp DOT
                                             &trans       &trans        &trans           &trans         &trans        &trans
                                             &trans       &trans        &trans           &trans         &trans        &trans

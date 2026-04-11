@@ -15,7 +15,7 @@
 // |   SHIFT |   A   |   S   |   D   |   F   |   G   |     |   H   |   J     |   K   |   L   |    ;    | PrintS  |
 // |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B     |   N   |   M   |    ,    | CapsLock|
 // |         |       |       |  DEL  | LALT  | LGUI  |     | RGUI  | &mo 2   | RCTRL |       |         |         |
-// |         |       |       |  RET  |Layer1 | BSPC  |     | HOME  | SPACE   |  END  |       |         |         |
+// |         |       |       | BSPC  |  RET  | SPACE |     | HOME  | &mo 1   |  END  |       |         |         |
 
 
             bindings = <
@@ -24,7 +24,7 @@
   &kp LSHIFT &kp A   &kp S   &kp D     &kp F    &kp G        &kp H    &kp J     &kp K     &kp L    &kp SEMI  &kp PSCRN
   &kp LCTRL  &kp Z   &kp X   &kp C     &kp V                          &kp B     &kp N     &kp M    &kp COMMA &kp CLCK
                              &kp DEL   &kp LALT &kp LGUI     &kp RGUI &mo 2     &kp RCTRL
-                             &kp RET   &mo 1    &kp BSPC     &kp HOME &kp SPACE &kp END
+                             &kp BSPC  &kp RET  &kp SPACE    &kp HOME &mo 1     &kp END
             >;
         };
 
@@ -47,8 +47,8 @@
   &kp TAB    &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp BSLH  &kp FSLH  &kp TILDE
   &kp LSHIFT &kp MINUS &kp PLUS  &kp LPAR  &kp RPAR &kp SQT      &kp DQT   &kp LBKT  &kp RBKT  &kp COLON &kp SEMI  &kp QMARK
   &kp LCTRL  &kp UNDER &kp EQUAL &kp COMMA &kp DOT                         &kp LBRC  &kp RBRC  &kp LT    &kp GT    &kp PIPE
-                                 &trans    &trans   &trans       &trans    &kp UP    &trans
-                                 &trans    &trans   &trans       &kp LEFT  &kp DOWN  &kp RIGHT
+                                 &trans    &kp UP   &trans       &trans    &trans    &trans
+                                 &kp LEFT  &kp DOWN &kp RIGHT    &trans    &trans    &trans
             >;
         };        
 

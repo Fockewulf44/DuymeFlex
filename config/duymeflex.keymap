@@ -24,7 +24,7 @@
   &kp LSHIFT &kp A   &kp S   &kp D     &kp F    &kp G        &kp H    &kp J     &kp K     &kp L    &kp SEMI  &kp PSCRN
   &kp LCTRL  &kp Z   &kp X   &kp C     &kp V                          &kp B     &kp N     &kp M    &kp COMMA &kp CLCK
                              &kp DEL   &kp LALT &kp LGUI     &kp RGUI &mo 2     &kp RCTRL
-                             &kp BSPC  &kp RET  &kp SPACE    &kp HOME &mo 1     &kp END
+                             &kp SPACE &kp RET  &kp BSPC     &kp HOME &mo 1     &kp END
             >;
         };
 

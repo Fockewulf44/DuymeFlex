@@ -35,8 +35,8 @@
 
 // |   F1    |   F2  |    F3  |   F4    |   F5    |   F6  |      |  F7    |   F8     |   F9    |   F10 |    F11  |  F12    |
 // |   TAB   |   !   |    @   |   #     |   $     |   %   |      |  ^     |   &      |   *     |   \   |    /    |    ~    |
-// |   SHIFT |   -   |    +   |   {     |   }     |   [   |      |  ]     |   '      |   "     |   ?   |    |    |         |
-// |   CTRL  |   _   |    =   |   (     |   )     |                       |   :      |   ;     |   <   |    >    |         |
+// |   SHIFT |   -   |    +   |   (     |   )     |   [   |      |  ]     |   '      |   "     |   ?   |    |    |         |
+// |   CTRL  |   _   |    =   |   {     |   }     |                       |   :      |   ;     |   <   |    >    |         |
 // |         |       |        |  trans  |   UP    | trans |      |  trans |   trans  | trans   |       |         |         |
 // |         |       |        |  LEFT   | DOWN    | RIGHT |      |  trans |  trans   | trans   |       |         |         |
 
@@ -44,8 +44,8 @@
             bindings = <
   &kp F1     &kp F2    &kp F3    &kp F4    &kp F5   &kp F6       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
   &kp TAB    &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp BSLH  &kp FSLH  &kp TILDE
-  &kp LSHIFT &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC &kp LBKT     &kp RBKT  &kp SQT   &kp DQT   &kp QMARK &kp PIPE  &trans
-  &kp LCTRL  &kp UNDER &kp EQUAL &kp LPAR  &kp RPAR                        &kp COLON &kp SEMI  &kp LT    &kp GT    &trans
+  &kp LSHIFT &kp MINUS &kp PLUS  &kp LPAR  &kp RPAR &kp LBKT     &kp RBKT  &kp SQT   &kp DQT   &kp QMARK &kp PIPE  &trans
+  &kp LCTRL  &kp UNDER &kp EQUAL &kp LBRC  &kp RBRC                        &kp COLON &kp SEMI  &kp LT    &kp GT    &trans
                                  &trans    &kp UP   &trans       &trans    &trans    &trans
                                  &kp LEFT  &kp DOWN &kp RIGHT    &trans    &trans    &trans
             >;

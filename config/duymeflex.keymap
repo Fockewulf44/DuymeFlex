@@ -14,7 +14,7 @@
 // |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U     |   I   |   O   |    P    | PageDown|
 // |   SHIFT |   A   |   S   |   D   |   F   |   G   |     |   H   |   J     |   K   |   L   |    ,    | PrintS  |
 // |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B     |   N   |   M   |    .    | CapsLock|
-// |         |       |       |  DEL  | LALT  | LGUI  |     | RGUI  | &mo 2   | RCTRL |       |         |         |
+// |         |       |       |  DEL  | LALT  | LGUI  |     | RALT  | &mo 2   | RCTRL |       |         |         |
 // |         |       |       | BSPC  |  RET  | SPACE |     | HOME  | &mo 1   |  END  |       |         |         |
 
 
@@ -23,7 +23,7 @@
   &kp TAB    &kp Q   &kp W   &kp E     &kp R    &kp T        &kp Y    &kp U     &kp I     &kp O    &kp P     &kp PG_DN
   &kp LSHIFT &kp A   &kp S   &kp D     &kp F    &kp G        &kp H    &kp J     &kp K     &kp L    &kp COMMA &kp PSCRN
   &kp LCTRL  &kp Z   &kp X   &kp C     &kp V                          &kp B     &kp N     &kp M    &kp DOT   &kp CLCK
-                             &kp DEL   &kp LALT &kp LGUI     &kp RGUI &mo 2     &kp RCTRL
+                             &kp DEL   &kp LALT &kp LGUI     &kp RALT &mo 2     &kp RCTRL
                              &kp SPACE &kp RET  &kp BSPC     &kp HOME &mo 1     &kp END
             >;
         };

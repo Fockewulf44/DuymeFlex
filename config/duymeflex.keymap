@@ -12,7 +12,7 @@
 // ---------------------------------------------------------------------------------------------------------
 // |   ESC   |   1   |   2   |   3   |   4   |   5   |     |   6   |   7     |   8   |   9   |    0    | PageUp  |
 // |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U     |   I   |   O   |    P    | PageDown|
-// | CapsLock|   A   |   S   |   D   |   F   |   G   |     |   H   |   J     |   K   |   L   |    ,    | PrintS  |
+// | LSHIFT  |   A   |   S   |   D   |   F   |   G   |     |   H   |   J     |   K   |   L   |    ,    | PrintS  |
 // |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B     |   N   |   M   |    .    | SHIFT   |
 // |         |       |       |  DEL  | LALT  | LGUI  |     | RALT  | &mo 2   | RCTRL |       |         |         |
 // |         |       |       | BSPC  |  RET  | SPACE |     | HOME  | &mo 1   |  END  |       |         |         |
@@ -21,7 +21,7 @@
             bindings = <
   &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4   &kp N5       &kp N6   &kp N7    &kp N8    &kp N9   &kp N0    &kp PG_UP
   &kp TAB    &kp Q   &kp W   &kp E     &kp R    &kp T        &kp Y    &kp U     &kp I     &kp O    &kp P     &kp PG_DN
-  &kp CLCK   &kp A   &kp S   &kp D     &kp F    &kp G        &kp H    &kp J     &kp K     &kp L    &kp COMMA &kp PSCRN
+  &kp LSHIFT &kp A   &kp S   &kp D     &kp F    &kp G        &kp H    &kp J     &kp K     &kp L    &kp COMMA &kp PSCRN
   &kp LCTRL  &kp Z   &kp X   &kp C     &kp V                          &kp B     &kp N     &kp M    &kp DOT   &kp RSHIFT
                              &kp DEL   &kp LALT &kp LGUI     &kp RALT &mo 2     &kp RCTRL
                              &kp SPACE &kp RET  &kp BSPC     &kp HOME &mo 1     &kp END

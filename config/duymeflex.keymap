@@ -12,8 +12,8 @@
 // ---------------------------------------------------------------------------------------------------------
 // |   ESC   |   1   |   2   |   3   |   4   |   5   |     |   6   |   7     |   8   |   9   |    0    | PageUp  |
 // |   TAB   |   Q   |   W   |   E   |   R   |   T   |     |   Y   |   U     |   I   |   O   |    P    | PageDown|
-// |   SHIFT |   A   |   S   |   D   |   F   |   G   |     |   H   |   J     |   K   |   L   |    ,    | PrintS  |
-// |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B     |   N   |   M   |    .    | CapsLock|
+// | CapsLock|   A   |   S   |   D   |   F   |   G   |     |   H   |   J     |   K   |   L   |    ,    | PrintS  |
+// |   CTRL  |   Z   |   X   |   C   |   V   |                     |   B     |   N   |   M   |    .    | SHIFT   |
 // |         |       |       |  DEL  | LALT  | LGUI  |     | RALT  | &mo 2   | RCTRL |       |         |         |
 // |         |       |       | BSPC  |  RET  | SPACE |     | HOME  | &mo 1   |  END  |       |         |         |
 
@@ -21,8 +21,8 @@
             bindings = <
   &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4   &kp N5       &kp N6   &kp N7    &kp N8    &kp N9   &kp N0    &kp PG_UP
   &kp TAB    &kp Q   &kp W   &kp E     &kp R    &kp T        &kp Y    &kp U     &kp I     &kp O    &kp P     &kp PG_DN
-  &kp LSHIFT &kp A   &kp S   &kp D     &kp F    &kp G        &kp H    &kp J     &kp K     &kp L    &kp COMMA &kp PSCRN
-  &kp LCTRL  &kp Z   &kp X   &kp C     &kp V                          &kp B     &kp N     &kp M    &kp DOT   &kp CLCK
+  &kp CLCK   &kp A   &kp S   &kp D     &kp F    &kp G        &kp H    &kp J     &kp K     &kp L    &kp COMMA &kp PSCRN
+  &kp LCTRL  &kp Z   &kp X   &kp C     &kp V                          &kp B     &kp N     &kp M    &kp DOT   &kp RSHIFT
                              &kp DEL   &kp LALT &kp LGUI     &kp RALT &mo 2     &kp RCTRL
                              &kp SPACE &kp RET  &kp BSPC     &kp HOME &mo 1     &kp END
             >;
@@ -34,18 +34,18 @@
 
 
 // |   F1    |   F2  |    F3  |   F4    |   F5    |   F6  |      |  F7    |   F8     |   F9    |   F10 |    F11  |  F12    |
-// |   TAB   |   !   |    @   |   #     |   $     |   %   |      |  ^     |   &      |   *     |   '   |    "    |    ~    |
-// |   SHIFT |   -   |    +   |   (     |   )     |   [   |      |  ]     |   \      |   /     |   ?   |    |    |         |
-// |   CTRL  |   _   |    =   |   {     |   }     |                       |   :      |   ;     |   <   |    >    |         |
+// |   trans |   '   |    "   |   [     |   ]     |   -   |      |  +     |   =      |    <    |   >   |         |    ~    |
+// |   trans |       |    _   |   (     |   )     |   :   |      |  ;     |   ?      |    |    |       |         |         |
+// |   trans |       |        |   {     |   }     |                       |   \      |    /    |       |         |         |
 // |         |       |        |  trans  |   UP    | trans |      |  trans |   trans  | trans   |       |         |         |
 // |         |       |        |  LEFT   | DOWN    | RIGHT |      |  trans |  trans   | trans   |       |         |         |
 
 
             bindings = <
   &kp F1     &kp F2    &kp F3    &kp F4    &kp F5   &kp F6       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-  &kp TAB    &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp SQT   &kp DQT   &kp TILDE
-  &kp LSHIFT &kp MINUS &kp PLUS  &kp LPAR  &kp RPAR &kp LBKT     &kp RBKT  &kp BSLH  &kp FSLH  &kp QMARK &kp PIPE  &trans
-  &kp LCTRL  &kp UNDER &kp EQUAL &kp LBRC  &kp RBRC                        &kp COLON &kp SEMI  &kp LT    &kp GT    &trans
+  &trans     &kp SQT   &kp DQT   &kp LBKT  &kp RBKT &kp MINUS    &kp PLUS  &kp EQUAL &kp LT    &kp GT    &kp       &kp TILDE
+  &trans     &kp       &kp UNDER &kp LPAR  &kp RPAR &kp COLON    &kp SEMI  &kp QMARK &kp PIPE  &kp       &kp       &none
+  &trans     &kp       &kp       &kp LBRC  &kp RBRC                        &kp BSLH  &kp FSLH  &kp       &kp       &trans
                                  &trans    &kp UP   &trans       &trans    &trans    &trans
                                  &kp LEFT  &kp DOWN &kp RIGHT    &trans    &trans    &trans
             >;
@@ -64,10 +64,10 @@
 
  
             bindings = <
-  &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR     &kp C_BRI_DN  &kp C_BRI_UP &trans       &kp N0   &kp N0
-  &studio_unlock &bt BT_CLR   &kp W         &kp E        &kp R         &kp T            &studio_unlock &kp C_MUTE    &kp C_VOL_DN &kp C_VOL_UP &kp P    &kp MINUS
-  &bootloader    &kp A        &kp S         &kp D        &kp F         &kp G            &bootloader    &kp C_PREV    &kp C_PP     &kp C_NEXT   &kp SEMI &kp SQT
-  &soft_off      &kp Z        &kp X         &kp C        &kp V                          &soft_off      &kp N         &kp M        &kp COMMA    &kp DOT
+  &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4     &bt BT_CLR     &kp C_BRI_DN  &kp C_BRI_UP &none        &none    &none
+  &studio_unlock &bt BT_CLR   &none         &none        &none         &none            &studio_unlock &kp C_MUTE    &kp C_VOL_DN &kp C_VOL_UP &none    &none
+  &bootloader    &none        &none         &none        &none         &none            &bootloader    &kp C_PREV    &kp C_PP     &kp C_NEXT   &none    &none
+  &soft_off      &none        &none         &none        &none                                         &none         &none        &none        &none    &none
                                             &trans       &trans        &trans           &trans         &trans        &trans
                                             &trans       &trans        &trans           &trans         &trans        &trans
             >;
